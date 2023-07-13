@@ -2,6 +2,7 @@ from django.shortcuts import render
 from shoping.models import Product
 from django.db.models import Q
 
+
 # Create your views here.
 
 def search(request):
