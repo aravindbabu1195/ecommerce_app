@@ -48,7 +48,7 @@ Cart - CODE Company PVT LTD .
                 <tr>
                     <td>
 
-                        <a ><img src="{{cart_item.product.img.url}}" width="100px" height="100px" class="float-left rounded custom_image"></a>
+                        <a href="{{cart_item.product.get_url}}"><img src="{{cart_item.product.img.url}}" width="100px" height="100px" class="float-left rounded custom_image"></a>
 
                     </td>
 
@@ -115,6 +115,9 @@ Cart - CODE Company PVT LTD .
                 </tr>
                 </tbody>
             </table>
+            <div class="mx-auto">
+                <a href="" class="btn btn-primary btn-block my_custom_button">Payment</a>
+            </div>
             <div class="mx-auto">
                 <a href="{% url 'shoping:allprocat' %}" class="btn btn-secondary btn-block my_custom_button">Continue Shopping</a>
             </div>
